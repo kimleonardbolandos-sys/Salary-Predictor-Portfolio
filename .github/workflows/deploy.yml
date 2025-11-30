@@ -4,10 +4,9 @@ on:
   push:
     branches: ["main"]
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -21,11 +20,13 @@ jobs:
         with:
           node-version: 18
 
+      # Installs dependencies and builds the React app
       - name: Install and Build
         run: |
           npm ci
           npm run build
 
+      # Deploys the 'build' folder to the 'gh-pages' branch
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
