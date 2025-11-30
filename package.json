@@ -6,7 +6,7 @@
 "react-dom": "^18.2.0",
 "lucide-react": "^0.263.1",
 "react-scripts": "5.0.1"
-},
+"@babel/plugin-proposal-private-property-in-object": "^7.21.11",},
 "scripts": {
 "start": "react-scripts start",
 "build": "CI=false react-scripts build",
