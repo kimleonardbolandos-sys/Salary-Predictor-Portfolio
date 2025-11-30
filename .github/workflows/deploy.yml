@@ -32,3 +32,4 @@ jobs:
         with:
           folder: build
           branch: gh-pages
+# Retrying build
